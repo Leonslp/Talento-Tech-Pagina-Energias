@@ -2367,6 +2367,7 @@ fieldset:disabled a.btn {
   color: #fff;
   background-color: #7AB730;
   border-color: #7AB730;
+  
 }
 
 .btn-primary:hover {
@@ -9767,4 +9768,13 @@ h6,
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+
+/* Custom CSS */
+.text, i {
+  color: white;
+  font-size: 50px;
+  cursor: pointer;
+  padding: 10px;
 }
