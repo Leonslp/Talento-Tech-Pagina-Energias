@@ -1,0 +1,64 @@
+# Análisis Estadístico con Python
+
+## Descripción del Proyecto
+Este proyecto consiste en el análisis de un conjunto de datos utilizando herramientas de estadística en Python. Se emplearon las bibliotecas Pandas, NumPy y Matplotlib para realizar la limpieza, manipulación y visualización de los datos.
+
+## Origen de los Datos
+Los datos utilizados en este análisis son de acceso público y fueron descargados desde Repsol(https://www.repsol.com/es/sala-prensa/anuario-energetico/index.cshtml). Se trata de un conjunto de datos que contiene información sobre la distribución de los recursos energéticos mundiales. 
+
+Para garantizar la calidad del análisis, se realizó una verificación de integridad de los datos, incluyendo la eliminación de valores nulos, la estandarización de formatos y la identificación de posibles inconsistencias. 
+
+## Tecnologías Utilizadas
+- **Python**: Lenguaje de programación principal para el análisis.
+- **Pandas**: Para la manipulación y análisis de datos.
+- **NumPy**: Para operaciones matemáticas y manejo de arrays.
+- **Matplotlib.pyplot**: Para la generación de visualizaciones gráficas.
+
+## Contenido del Proyecto
+1. **Carga de Datos**: Importación de los datos desde un archivo CSV/Excel.
+2. **Limpieza de Datos**: Manejo de valores nulos, eliminación de datos duplicados y normalización.
+3. **Análisis Descriptivo**: Cálculo de medidas de tendencia central (media, mediana, moda) y dispersión (desviación estándar, varianza, percentiles).
+4. **Visualización de Datos**: Creación de histogramas, diagramas de dispersión y boxplots.
+5. **Análisis Estadístico**: Identificación de correlaciones y distribuciones de los datos.
+
+## Instalación y Uso
+Para ejecutar el proyecto, sigue estos pasos:
+
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/Leonslp/Talento-Tech-Pagina-Energias.git
+   ```
+
+2. Instala las dependencias necesarias:
+   ```bash
+   pip install pandas numpy matplotlib
+   ```
+
+3. Ejecuta el script principal:
+   ```bash
+   python mision2.py
+   ```
+
+## Ejemplo de Código
+```python
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Carga de datos
+df = pd.read_excel('datos.xlsx')
+
+# Estadísticas descriptivas
+print(df.describe())
+
+# Histograma
+df['columna_interes'].hist()
+plt.show()
+```
+
+## Contribución
+Si deseas contribuir a este proyecto, por favor abre un **issue** o envía un **pull request**.
+
+## Licencia
+Este proyecto está bajo la licencia MIT. Consulta el archivo `LICENSE` para más detalles.
+
